@@ -110,6 +110,7 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 // import axiosInstance from '../axiosinterceptor';
+import axios from 'axios';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');

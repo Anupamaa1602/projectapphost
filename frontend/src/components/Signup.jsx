@@ -12,6 +12,7 @@ import {
   Alert,
 } from '@mui/material';
 import { useNavigate, Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Signup = () => {
   const navigate = useNavigate();

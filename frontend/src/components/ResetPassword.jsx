@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 // import axiosInstance from '../axiosinterceptor';
+import axios from 'axios';
 
 const ResetPassword = () => {
   const { token } = useParams(); // from URL like /reset-password/:token
