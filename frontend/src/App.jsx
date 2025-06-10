@@ -18,7 +18,7 @@ import MyBooking from './components/MyBooking';
 import Message from './components/Message';
 import AddMessage from './components/AddMessages';
 import Payment from './components/Payment';
-import VoteList from './components/Votelist';
+import VoteList from './components/VoteList';
 import ResetPassword from './components/ResetPassword';
 import ForgotPassword from './components/ForgotPassword';
 import CheckoutForm from './components/CheckoutForm';
