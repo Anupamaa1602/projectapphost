@@ -10,7 +10,7 @@ import {
   CircularProgress,
 } from '@mui/material';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import axiosInstance from '../axiosinterceptor';
+// import axiosInstance from '../axiosinterceptor';
 
 const ResetPassword = () => {
   const { token } = useParams(); // from URL like /reset-password/:token
@@ -38,7 +38,7 @@ const ResetPassword = () => {
     setLoading(true);
 
     try {
-      const response = await axiosInstance.post('/api/auth/reset-password', {
+      const response = await axios.post('/api/auth/reset-password', {
         token,
         newPassword,
         confirmPassword,

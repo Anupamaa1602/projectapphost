@@ -12,7 +12,6 @@ import {
   Alert,
 } from '@mui/material';
 import { useNavigate, Link } from 'react-router-dom';
-import axiosInstance from '../axiosinterceptor'; // adjust path if needed
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -58,7 +57,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axiosInstance.post('/api/auth/register', {
+      const response = await axios.post('/api/auth/register', {
         name,
         email,
         password,

@@ -109,7 +109,7 @@ import {
   CircularProgress,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import axiosInstance from '../axiosinterceptor';
+// import axiosInstance from '../axiosinterceptor';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -129,7 +129,7 @@ const ForgotPassword = () => {
     setLoading(true);
 
     try {
-      const response = await axiosInstance.post('/api/auth/forgot-password', { email });
+      const response = await axios.post('/api/auth/forgot-password', { email });
 
       const token = response.data.token;
 

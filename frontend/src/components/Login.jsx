@@ -12,7 +12,6 @@ import {
   Backdrop,
 } from '@mui/material';
 import { useNavigate, Link } from 'react-router-dom';
-import axiosInstance from '../axiosinterceptor';
  import './Log.css'
 
 const Login = () => {
@@ -46,7 +45,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axiosInstance.post('/api/auth/login', {
+      const response = await axios.post('/api/auth/login', {
         email,
         password,
       });
